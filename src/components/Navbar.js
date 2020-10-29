@@ -6,10 +6,12 @@ import './Navbar.css';
 export const Navbar = () => {
   const openNav = () => {
     document.getElementById('myNav').style.width = '100%';
+    document.querySelector('.openbtn').style.display = 'none';
   };
 
   const closeNav = () => {
     document.getElementById('myNav').style.width = '0%';
+    document.querySelector('.openbtn').style.display = 'block';
   };
 
   return (
@@ -25,6 +27,7 @@ export const Navbar = () => {
           <Link to='/MDEditor'>MarkDown Editor</Link>
           <Link to='/HightlightTabs'>Hightlight Tabs</Link>
           <Link to='/PaperRockScissors'>Paper Rock Scissors</Link>
+          <Link to='/MovingLink'>Moving Link</Link>
         </div>
       </div>
       <span className='openbtn' onClick={openNav}>
