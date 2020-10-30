@@ -32,7 +32,7 @@ export const MovingLink = () => {
     if (direction === 'right') theLinkRef = linkRightRef;
 
     context.drawImage(theLinkRef.current, x, y);
-  }, [x, y]);
+  }, [x, y, direction]);
 
   return (
     <div className='moving-link-app'>

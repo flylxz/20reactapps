@@ -9,6 +9,7 @@ import { MDEditor } from './apps/a02-editor/MDEditor';
 import { HightlightTabs } from './apps/a03-highlight-tabs/HightlightTabs';
 import { PaperRockScissors } from './apps/a04-paper-rock-scissors/PaperRockScissors';
 import { MovingLink } from './apps/a05-moving-link/MovingLink';
+import { InfiniteImageGallery } from './apps/a06-infinite-image-gallery/InfiniteImageGallery';
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path='/HightlightTabs' component={HightlightTabs} />
         <Route path='/PaperRockScissors' component={PaperRockScissors} />
         <Route path='/MovingLink' component={MovingLink} />
+        <Route path='/InfiniteImageGallery' component={InfiniteImageGallery} />
       </Switch>
     </BrowserRouter>
   );

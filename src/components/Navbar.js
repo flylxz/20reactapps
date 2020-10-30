@@ -28,6 +28,7 @@ export const Navbar = () => {
           <Link to='/HightlightTabs'>Hightlight Tabs</Link>
           <Link to='/PaperRockScissors'>Paper Rock Scissors</Link>
           <Link to='/MovingLink'>Moving Link</Link>
+          <Link to='/InfiniteImageGallery'>Infinite Image Gallery</Link>
         </div>
       </div>
       <span className='openbtn' onClick={openNav}>
