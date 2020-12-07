@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './Navbar.css';
+import './Navbar.scss';
 
 export const Navbar = () => {
   const openNav = () => {
@@ -29,6 +29,10 @@ export const Navbar = () => {
           <Link to='/PaperRockScissors'>Paper Rock Scissors</Link>
           <Link to='/MovingLink'>Moving Link</Link>
           <Link to='/InfiniteImageGallery'>Infinite Image Gallery</Link>
+          <Link to='/TriviaGame'>Trivia Game</Link>
+          <Link to='/Authentication'>Authentication</Link>
+          <Link to='/WebSpeech'>WebSpeech</Link>
+          <Link to='/CalendarPicker'>Calendar Picker</Link>
         </div>
       </div>
       <span className='openbtn' onClick={openNav}>
