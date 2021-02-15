@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './Navbar.scss';
 
@@ -22,17 +22,42 @@ export const Navbar = () => {
         </span>
 
         <div className='overlay-content'>
-          <Link to='/'>Home</Link>
-          <Link to='/Pomodoro'>Pomodoro Timer</Link>{' '}
-          <Link to='/MDEditor'>MarkDown Editor</Link>
-          <Link to='/HightlightTabs'>Hightlight Tabs</Link>
-          <Link to='/PaperRockScissors'>Paper Rock Scissors</Link>
-          <Link to='/MovingLink'>Moving Link</Link>
-          <Link to='/InfiniteImageGallery'>Infinite Image Gallery</Link>
-          <Link to='/TriviaGame'>Trivia Game</Link>
-          <Link to='/Authentication'>Authentication</Link>
-          <Link to='/WebSpeech'>WebSpeech</Link>
-          <Link to='/CalendarPicker'>Calendar Picker</Link>
+          <NavLink to='/' activeClassName='active-navlink'>
+            Home
+          </NavLink>
+          <NavLink to='/Pomodoro' activeClassName='active-navlink'>
+            Pomodoro Timer
+          </NavLink>
+          <NavLink to='/MDEditor' activeClassName='active-navlink'>
+            MarkDown Editor
+          </NavLink>
+          <NavLink to='/HightlightTabs' activeClassName='active-navlink'>
+            Hightlight Tabs
+          </NavLink>
+          <NavLink to='/PaperRockScissors' activeClassName='active-navlink'>
+            Paper Rock Scissors
+          </NavLink>
+          <NavLink to='/MovingLink' activeClassName='active-navlink'>
+            Moving Link
+          </NavLink>
+          <NavLink to='/InfiniteImageGallery' activeClassName='active-navlink'>
+            Infinite Image Gallery
+          </NavLink>
+          <NavLink to='/TriviaGame' activeClassName='active-navlink'>
+            Trivia Game
+          </NavLink>
+          <NavLink to='/Authentication' activeClassName='active-navlink'>
+            Authentication
+          </NavLink>
+          <NavLink to='/WebSpeech' activeClassName='active-navlink'>
+            WebSpeech
+          </NavLink>
+          <NavLink to='/CalendarPicker' activeClassName='active-navlink'>
+            Calendar Picker
+          </NavLink>
+          <NavLink to='/MathCard' activeClassName='active-navlink'>
+            Math Card
+          </NavLink>
         </div>
       </div>
       <span className='openbtn' onClick={openNav}>

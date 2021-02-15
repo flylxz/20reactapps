@@ -14,6 +14,7 @@ import { TriviaGame } from './apps/a07-trivia-game/TriviaGame';
 import { Authentication } from './apps/a08-authentication';
 import { WebSpeech } from './apps/a09-web-speech-and-timers/WebSpeech';
 import { CalendarPicker } from './apps/a10-calendar-picker/CalendarPicker';
+import { MathCard } from './apps/b04-drag-and-drop-math-card/MathCard';
 
 export default function App() {
   return (
@@ -31,6 +32,7 @@ export default function App() {
         <Route path='/Authentication' component={Authentication} />
         <Route path='/WebSpeech' component={WebSpeech} />
         <Route path='/CalendarPicker' component={CalendarPicker} />
+        <Route path='/MathCard' component={MathCard} />
       </Switch>
     </BrowserRouter>
   );
